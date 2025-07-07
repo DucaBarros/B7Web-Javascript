@@ -1,9 +1,14 @@
-// Aula Teplate String
+let age = parseInt(prompt('Digite sua idade'))
 
-let namex = 'Duca'
-let familyName = 'Barros'
-let age = 41
-let fullName = `Meu nome é ${namex} ${familyName} e tenho ${age} anos` //Template String
-
-console.log(fullName)
-
+if (age <= 11){
+    console.log(`Você tem ${age} e é uma CRIANÇA`)
+}
+else if (age > 11 && age < 18){
+    console.log(`Você tem ${age} e é um(a ADOLESCENTE`)
+}
+else if (age >= 18 && age < 60){
+    console.log(`Você tem ${age} e é um(a) ADULTO(A)`)
+}
+else if (age >= 60){
+    console.log(`Você tem ${age} e é um(a) IDOSO(A)`)
+}
